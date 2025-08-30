@@ -80,4 +80,13 @@
   .card-light a:hover {
     text-decoration: underline;
   }
-  
+  .welcomeBy .pastor-info h5,
+  .welcomeBy .pastor-info p {
+    color: #fff !important;
+  }
+  .primary-text-light,
+  .primary-text-light h5,
+  .primary-text-light p {
+    color: #fff !important;
+  }
+      
