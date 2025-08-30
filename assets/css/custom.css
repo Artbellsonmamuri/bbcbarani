@@ -5,3 +5,32 @@
  * --------------------------------------------------
  *
  */
+ /* Row styling for alignment */
+.row.welcomeBy {
+    display: flex;
+    align-items: center;   /* vertical centering */
+    justify-content: flex-start;
+    margin-top: 10px;      /* optional spacing from other sections */
+  }
+  
+  /* Pastor photo */
+  .pastor-photo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;    /* circular look */
+  }
+  
+  /* Text info beside photo */
+  .pastor-info {
+    margin-left: 30px;     /* <-- space between photo and text */
+  }
+  
+  .pastor-info h5 {
+    margin-bottom: 0;      /* removes bottom gap under name */
+  }
+  
+  .pastor-info .position {
+    margin-top: 2px;       /* slight breathing room instead of 0 */
+    font-size: 14px;
+  }
+  
