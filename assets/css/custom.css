@@ -107,4 +107,81 @@
   .card-avatar:hover {
     background: #0056b3;
   }
+/* ---------- Footer: force white + hover accent ---------- */
+/* Place this at the end of your main CSS file (style.css) */
+
+#site_footer_info,
+#site_footer_info * {
+  color: #ffffff !important;               /* force white text */
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Links (normal + visited) */
+#site_footer_info a,
+#site_footer_info a:link,
+#site_footer_info a:visited {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  outline: none;
+}
+
+/* Hover / focus — pick an accent color here (gold used as example) */
+:root { --footer-accent: #f1c40f; } /* change this to match your theme */
+#site_footer_info a:hover,
+#site_footer_info a:focus {
+  color: var(--footer-accent) !important;
+  text-decoration: none !important;
+}
+
+/* Icons */
+#site_footer_info i {
+  color: #ffffff !important;
+  transition: color .18s ease, transform .18s ease;
+  vertical-align: middle;
+}
+
+/* Icon hover: color + subtle lift */
+#site_footer_info a:hover i,
+#site_footer_info a:focus i {
+  color: var(--footer-accent) !important;
+  transform: translateY(-2px);
+}
+
+/* Social menu item spacing and alignment */
+.site-footer-social-menu .menu-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background .18s ease, color .18s ease;
+}
+
+/* Optional: subtle background on hover for clickable items */
+.site-footer-social-menu .menu-item a:hover {
+  background: rgba(255,255,255,0.04) !important;
+}
+
+/* Copyright/small text */
+#site_footer_info small,
+#site_footer_info .site-footer-copyright {
+  color: #ffffff !important;
+  opacity: 0.95;
+  font-size: 0.9rem;
+}
+
+/* Ensure email/phone links don't get browser default colors */
+#site_footer_info a[href^="mailto:"],
+#site_footer_info a[href^="tel:"] {
+  color: #ffffff !important;
+}
+
+/* Responsive spacing — keep things tidy on mobile */
+@media (max-width: 767px) {
+  #site_footer_info .site-footer-social-menu .menu-item {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
         
