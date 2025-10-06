@@ -66,11 +66,53 @@
           </div>
         </div>
 
-        
+        <!-- New Section: Browse Past Live Streams -->
+        <div id="past_streams_section" class="section section-sm text-center" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-top: 1px solid #e0e0e0;">
+          <div class="container">
+            <div style="max-width: 600px; margin: 0 auto;">
+              <h3 class="widget-title mb-3" style="color: #333; font-size: 24px; font-weight: 500;">
+                <i class="fas fa-history" style="color: #ff6b6b; margin-right: 10px;"></i>
+                Browse Our Past Live Streams
+              </h3>
+              <p class="text-muted mb-4" style="font-size: 16px; line-height: 1.6;">
+                Missed a service? Catch up on our previous worship sessions and messages anytime.
+              </p>
+              <div class="past-streams-button-container">
+                <a href="https://www.youtube.com/@artbellsonmamuri911" 
+                   target="_blank" 
+                   class="btn btn-lg" 
+                   style="background: linear-gradient(45deg, #ff0000, #cc0000); 
+                          color: white; 
+                          padding: 15px 30px; 
+                          border-radius: 50px; 
+                          text-decoration: none; 
+                          display: inline-flex; 
+                          align-items: center; 
+                          font-size: 18px; 
+                          font-weight: 500; 
+                          box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3); 
+                          transition: all 0.3s ease; 
+                          border: none;"
+                   onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(255, 0, 0, 0.4)'"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(255, 0, 0, 0.3)'">
+                  <i class="fab fa-youtube" style="font-size: 24px; margin-right: 12px;"></i>
+                  Watch on YouTube
+                </a>
+              </div>
+              <div style="margin-top: 20px;">
+                <small class="text-muted" style="font-style: italic;">
+                  Subscribe to our channel to get notified of new live streams!
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div id="site_footer">
           <div id="site_footer_info" class="site-footer-info section section-sm text-center bg-dark text-white">
             <div class="container">
-        
+
               <!-- Social / Partner Links -->
               <nav class="site-footer-social-nav mb-4">
                 <ul class="site-footer-social-menu list-inline m-0">
@@ -96,7 +138,7 @@
                   </li>
                 </ul>
               </nav>
-        
+
               <!-- Address & Contact -->
               <div class="footer-contact mb-4 wow fadeInUpShort" data-wow-delay="500ms">
                 <p class="mb-1">
@@ -112,17 +154,51 @@
                   <a href="mailto:info@bbcbarani.org" class="text-white">info@bbcbarani.org</a>
                 </p>
               </div>
-        
+
               <!-- Copyright -->
               <div class="site-footer-copyright wow fadeInUpShort" data-wow-delay="600ms">
                 <small>Copyright © 2020–2025 Bible Baptist Church Barani. All Rights Reserved.</small>
               </div>
-        
+
             </div>
           </div>
         </div>
 
       </div>
     </div>
+
+    <!-- Additional CSS for mobile responsiveness -->
+    <style>
+      @media (max-width: 768px) {
+        #past_streams_section .btn-lg {
+          font-size: 16px !important;
+          padding: 12px 25px !important;
+        }
+
+        #past_streams_section h3 {
+          font-size: 20px !important;
+        }
+
+        #past_streams_section p {
+          font-size: 14px !important;
+        }
+
+        .fab.fa-youtube {
+          font-size: 20px !important;
+          margin-right: 8px !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        #past_streams_section {
+          padding: 30px 15px !important;
+        }
+
+        #past_streams_section .btn-lg {
+          font-size: 14px !important;
+          padding: 10px 20px !important;
+        }
+      }
+    </style>
   </body>
 </html>
